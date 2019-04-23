@@ -1,0 +1,16 @@
+{
+  "name": "hashids-decoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "agurodriguez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hashids": "^1.2.2"
+  }
+}
