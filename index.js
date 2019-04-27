@@ -12,11 +12,11 @@ app.get('/decode', function (req, res) {
 });
 
 app.get('/encode', function (req, res) {
-    if (!req.query.hash) return res.sendStatus(400);
+    if (!req.query.n) return res.sendStatus(400);
     if (!req.query.salt) return res.sendStatus(400);
 
     const hashids = new Hashids(req.query.salt, req.query.length);
-    res.send(hashids.encode(req.query.hash));
+    res.send(hashids.encode(req.query.n));
 });
 
 app.listen(process.env.PORT || 4000, function () {
